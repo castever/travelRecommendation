@@ -1,0 +1,115 @@
+body {
+  background-image: url("./background.jpg");
+  font-family: Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: #042577;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+  /* padding: 0; */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #dee6f9;
+  font-weight: bold;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+input[type="text"] {
+  border-radius: 8px;
+}
+
+textarea {
+  border-radius: 8px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 200px;
+  padding: 5px;
+}
+
+button {
+  padding: 7px 15px;
+  background-color: #f9efb8;
+  border-radius: 8px;
+  color: #042577;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+div#intro {
+  background-color: #f9efb8;
+  height: 250px;
+  width: 80%;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+div#team {
+  background-color: #f9efb8;
+  width: 80%;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  padding: 15px;
+  border-radius: 8px;
+  display: grid;
+}
+
+.card {
+  width: 30%;
+  height: 90%;
+  margin: 10px;
+  padding: 5px;
+  display: inline-block;
+  border: thin black solid;
+  border-radius: 8px;
+  background-color: #dee6f9;
+}
+
+.team_role {
+  background-color: #042577;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+}
