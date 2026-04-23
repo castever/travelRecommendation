@@ -21,7 +21,10 @@ function performSearch() {
       } else if (searchTerm.includes("templ")) {
         results = data.temples;
       } else if (searchTerm.includes("count")) {
-        results = data.countries[0].cities;
+        for (const country of data.countries) {
+          results = [...results, ...country.cities];
+        }
+        console.log(results);
       }
 
       let html = "<h3>Search Results</h3>";
