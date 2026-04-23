@@ -113,3 +113,26 @@ div#team {
   border-radius: 8px;
   padding: 10px;
 }
+
+.hidden {
+  display: none;
+}
+
+.grid {
+  dispaly: grid;
+}
+
+div#results {
+  width: 90%;
+  background-color: #f9efb8;
+  width: 80%;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+div.card img {
+  width: 150px;
+}
