@@ -84,7 +84,7 @@ div#intro {
   border-radius: 8px;
 }
 
-#intro button {
+.blue-button {
   background-color: #042577;
   color: white;
   margin-top: 25px;
