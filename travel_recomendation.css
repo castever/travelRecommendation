@@ -76,13 +76,18 @@ button:hover {
 
 div#intro {
   background-color: #f9efb8;
-  height: 100px;
   width: 80%;
   position: relative;
   top: 100px;
   left: 100px;
   padding: 15px;
   border-radius: 8px;
+}
+
+#intro button {
+  background-color: #042577;
+  color: white;
+  margin-top: 25px;
 }
 
 div#team {
