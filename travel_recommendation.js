@@ -11,7 +11,7 @@ function performSearch() {
   fetch("./travel_recommendation_api.json")
     .then((response) => response.json())
     .then((data) => {
-      resultDiv.classList.toggle("hidden");
+      resultDiv.classList.remove("hidden");
       const searchTerm = searchTermInput.value.toLowerCase();
 
       let results = [];
@@ -46,7 +46,7 @@ function performSearch() {
 }
 
 function clearResults() {
-  resultDiv.classList.toggle("hidden");
+  resultDiv.classList.add("hidden");
   resultDiv.innerHTML = "";
   searchTermInput.value = "";
 }
