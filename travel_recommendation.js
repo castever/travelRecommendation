@@ -11,6 +11,7 @@ function performSearch() {
   fetch("./travel_recommendation_api.json")
     .then((response) => response.json())
     .then((data) => {
+      resultDiv.classList.toggle("hidden");
       const searchTerm = searchTermInput.value.toLowerCase();
 
       let results = [];
@@ -23,7 +24,7 @@ function performSearch() {
         results = data.countries[0].cities;
       }
 
-      let html = "";
+      let html = "<h3>Search Results</h3>";
       resultDiv.innerHTML = html;
 
       for (const result of results) {
@@ -45,6 +46,7 @@ function performSearch() {
 }
 
 function clearResults() {
+  resultDiv.classList.toggle("hidden");
   resultDiv.innerHTML = "";
   searchTermInput.value = "";
 }

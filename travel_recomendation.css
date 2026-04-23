@@ -76,7 +76,7 @@ button:hover {
 
 div#intro {
   background-color: #f9efb8;
-  height: 250px;
+  height: 100px;
   width: 80%;
   position: relative;
   top: 100px;
@@ -115,11 +115,11 @@ div#team {
 }
 
 .hidden {
-  display: none;
+  visibility: hidden;
 }
 
 .grid {
-  dispaly: grid;
+  display: grid;
 }
 
 div#results {
